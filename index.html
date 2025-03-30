@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; line-height: 1.6; background-color: #f0f0f0;">
+    <!-- Navigation -->
+    <nav style="background-color: #333; padding: 1rem; position: fixed; width: 100%; top: 0; z-index: 100;">
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; justify-content: center;">
+            <li style="margin: 0 20px;"><a href="#about" style="color: white; text-decoration: none;">About</a></li>
+            <li style="margin: 0 20px;"><a href="#skills" style="color: white; text-decoration: none;">Skills</a></li>
+            <li style="margin: 0 20px;"><a href="#projects" style="color: white; text-decoration: none;">Projects</a></li>
+            <li style="margin: 0 20px;"><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" style="padding: 100px 20px 50px; text-align: center;">
+        <h1 style="color: #333;">John Doe</h1>
+        <p style="max-width: 600px; margin: 20px auto; color: #666;">
+            Hello! I'm a passionate web developer with experience in creating modern and responsive websites.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="padding: 50px 20px; background-color: #fff;">
+        <h2 style="text-align: center; color: #333;">Skills</h2>
+        <div style="max-width: 800px; margin: 30px auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            <div style="background-color: #333; color: white; padding: 15px 25px; border-radius: 5px;">HTML</div>
+            <div style="background-color: #333; color: white; padding: 15px 25px; border-radius: 5px;">CSS</div>
+            <div style="background-color: #333; color: white; padding: 15px 25px; border-radius: 5px;">JavaScript</div>
+            <div style="background-color: #333; color: white; padding: 15px 25px; border-radius: 5px;">React</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" style="padding: 50px 20px;">
+        <h2 style="text-align: center; color: #333;">Projects</h2>
+        <div style="max-width: 1000px; margin: 30px auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
+            <div style="background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 300px;">
+                <h3 style="color: #333;">Project 1</h3>
+                <p style="color: #666;">A responsive e-commerce website built with HTML, CSS, and JavaScript.</p>
+                <button onclick="alert('Project 1 clicked!')" style="background-color: #333; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">View Project</button>
+            </div>
+            <div style="background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 300px;">
+                <h3 style="color: #333;">Project 2</h3>
+                <p style="color: #666;">A weather application using React and external APIs.</p>
+                <button onclick="alert('Project 2 clicked!')" style="background-color: #333; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">View Project</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 50px 20px; background-color: #fff;">
+        <h2 style="text-align: center; color: #333;">Contact Me</h2>
+        <form style="max-width: 500px; margin: 30px auto;">
+            <input type="text" placeholder="Name" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
+            <input type="email" placeholder="Email" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px;">
+            <textarea placeholder="Message" style="width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; height: 100px;"></textarea>
+            <button type="button" onclick="alert('Message sent!')" style="background-color: #333; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; text-align: center; padding: 20px;">
+        <p>&copy; 2025 John Doe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
